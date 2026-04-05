@@ -5,21 +5,21 @@
 class Aksctx < Formula
   desc "AKS context switcher for discovering and switching clusters across Azure subscriptions"
   homepage "https://github.com/amrinder15/aksctx"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/amrinder15/aksctx/releases/download/v1.0.0/aksctx_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "5a86d131d177720136f7fc93a9a8698e641ab92141b94f2103877d969816226c"
+      url "https://github.com/amrinder15/aksctx/releases/download/v1.1.0/aksctx_1.1.0_Darwin_x86_64.tar.gz"
+      sha256 "f22e9442b91af385dfff92f5153aef8c0b7bdf0f1afcaa2780e151ca6658a21d"
 
       define_method(:install) do
         bin.install "aksctx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/amrinder15/aksctx/releases/download/v1.0.0/aksctx_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "d6495df1731be157749fde3764d094122f87c6947fe76d90f5147ede1385a58f"
+      url "https://github.com/amrinder15/aksctx/releases/download/v1.1.0/aksctx_1.1.0_Darwin_arm64.tar.gz"
+      sha256 "cef68491380eb50dee83726a7fbb4873e22a2c5425a76419d00c1998fe06d2dd"
 
       define_method(:install) do
         bin.install "aksctx"
@@ -29,15 +29,15 @@ class Aksctx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amrinder15/aksctx/releases/download/v1.0.0/aksctx_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "1091dbc4931520aeb19938b7e10ce83f4bf2d0f1ef65f66e48648461d25c0c1c"
+      url "https://github.com/amrinder15/aksctx/releases/download/v1.1.0/aksctx_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "0c4b2b14a1147a16651777c2558bb5d6f3fc0929070cc9ce3b1e0da339808d75"
       define_method(:install) do
         bin.install "aksctx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amrinder15/aksctx/releases/download/v1.0.0/aksctx_1.0.0_Linux_arm64.tar.gz"
-      sha256 "f2e09f25bded4751f2c10a3d2175a26a95938e5a66ea6b3d01507c48ace61a52"
+      url "https://github.com/amrinder15/aksctx/releases/download/v1.1.0/aksctx_1.1.0_Linux_arm64.tar.gz"
+      sha256 "b719276486fe04aca775fe70e4325773cc59b47ab4f1518a84848e984a8a12bf"
       define_method(:install) do
         bin.install "aksctx"
       end
